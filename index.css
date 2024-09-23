@@ -11,6 +11,30 @@ body{
     padding: 0;
 }
 
+@keyframes win-breathe {
+    0%, 100% {
+        /* transform: scale(1); */
+        /* background-color: darkblue; */
+        border: 1rem solid #00c030;
+    }
+    50% {
+        /* transform: scale(1.5); */
+        /* background-color: lightblue; */
+        border: 3rem solid #005021;
+    }
+}
+@keyframes lose-breathe {
+    0%, 100% {
+        /* transform: scale(1); */
+        /* background-color: darkblue; */
+        border: 1rem solid #db005b;
+    }
+    50% {
+        /* transform: scale(1.5); */
+        /* background-color: lightblue; */
+        border: 3rem solid #5c0039;
+    }
+}
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -19,16 +43,15 @@ body{
         transform: rotate(360deg);
     }
 }
-@keyframes breathe {
-    0%, 100% {
-        /* transform: scale(1); */
-        /* background-color: darkblue; */
-        border: 1rem solid #0074B6;
+
+@keyframes sparkle {
+    from {
+        opacity: 0.5;
+        transform: scale(1);
     }
-    50% {
-        /* transform: scale(1.5); */
-        /* background-color: lightblue; */
-        border: 3rem solid #0074B6;
+    to {
+        opacity: 1;
+        transform: scale(1.5);
     }
 }
 
@@ -37,6 +60,11 @@ body{
     /* display:none; */
 }
 
+#scores{
+    display: flex;
+    width: 40vh;
+    justify-content: space-between;
+}
 #scorecard{
     display: flex;
     width: 70vw;
@@ -138,6 +166,7 @@ body{
 
 #next{
     position: absolute;
+    display: none;
 
     right: 12vw;
     bottom: 2vh;
@@ -157,7 +186,7 @@ body{
     display: none;
     animation: breathe 4s ease-in-out infinite;
 
-    border: 1rem solid #0074B6;
+    border: 1rem solid #0097c5;
 }
 #yourResPaper{
     position: absolute;
@@ -166,7 +195,7 @@ body{
     display: none;
     animation: breathe 4s ease-in-out infinite;
 
-    border: 16px solid #FFA943;
+    border: 16px solid #0097c5;
 }
 #yourResScissor{
     position: absolute;
@@ -175,7 +204,7 @@ body{
     display: none;
     animation: breathe 4s ease-in-out infinite;
 
-    border: 16px solid #BD00FF;
+    border: 16px solid #0097c5;
 }
 #compResStone{
 position: absolute;
@@ -184,7 +213,7 @@ position: absolute;
     display: none;
     animation: breathe 4s ease-in-out infinite;
 
-    border: 16px solid #BD00FF;
+    border: 16px solid #0097c5;
 }
 #compResPaper{
 position: absolute;
@@ -193,7 +222,7 @@ position: absolute;
     display: none;
     animation: breathe 4s ease-in-out infinite;
 
-    border: 16px solid #BD00FF;
+    border: 16px solid #0097c5;
 }
 #compResScissor{
 position: absolute;
@@ -202,5 +231,119 @@ position: absolute;
     display: none;
     animation: breathe 4s ease-in-out infinite;
 
-    border: 16px solid #BD00FF;    
+    border: 16px solid #0097c5;    
+}
+.resPhrase{
+    display: none;
+}
+#playAgain, #playAgain2{
+    /* position: absolute; */
+
+    /* right: 45vw; */
+    /* bottom: 30vh; */
+    padding: 0.5rem 2rem 0.5rem 2rem;
+
+    border: 0.1rem solid white;
+    border-radius: 0.3rem;
+
+    color: white;
+    font-weight: bolder;
+}
+#resultSheet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+#resultWording{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 40vh;
+    padding: 1rem;
+    justify-content: space-between;
+    margin: auto;
+    /* padding: 5vh; */
+    padding: 0 1rem 0 1rem;
+    margin-top: 10vh;
+    align-items: center;
+    
+    
+    color: white;
+    font-size: 2rem;   
+}
+
+
+#winSheet{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items:center;
+    /* text-align: center; */
+    
+}
+#winCeleb{
+    height: 60%;
+}
+#winText{
+    height: 30%;
+    font-size: 3rem;
+    text-align: center;
+}
+#winText h3 {
+    margin: 0;
+    margin-top: 3vh;
+    font-size: 5rem;
+}
+
+#stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 10s linear infinite;
+    animate: sparkle 5s ease-in-out infinite;
+    z-index: 0;
+}
+.star{
+    position: absolute;
+    animation: sparkle 1s infinite alternate;
+}
+#prize{
+    width: 35vw;
+    z-index: 1;
+    position: relative;
+}
+#star1{
+    position: absolute;
+    top: 10vh;
+    left: 30vw;
+}
+#star2{
+    width: 15vw;
+    position: absolute;
+    top: 10vh;
+    left: 70vw;
+}
+#star3{
+    position: absolute;
+    top: 60vh;
+    left: 70vw;
+}
+#star4{
+    position: absolute;
+    top: 60vh;
+    left: 30vw;
+}
+#star5{
+    width: 20vw;
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
 }

@@ -7,18 +7,22 @@
     <title>Come play with me</title>
 </head>
 <body>
+
+
     <div id="mainSheet">
         <div id="scorecard">
             STONE <br>
             PAPER <br>
             SCISSOR <br>
-            <div id="mainYourScore" class="score">
-                YOUR SCORE
-                <h3 id="mainYourScoreVAR"> </h3>
-            </div>
-            <div id="mainOppScore" class="score">
-                COMPUTER SCORE
-                <h3 id="mainOppScoreVAR"></h3>
+            <div id="scores">
+                <div id="mainYourScore" class="score">
+                    YOUR SCORE
+                    <h3 id="mainYourScoreVAR"> </h3>
+                </div>
+                <div id="mainOppScore" class="score">
+                    COMPUTER SCORE
+                    <h3 id="mainOppScoreVAR"></h3>
+                </div>
             </div>
         </div>
         <div id="game">
@@ -28,9 +32,11 @@
             </div>
             <img src="assets/scissor.svg" alt="" id="scissor" class="opt">
         </div>
-        <div id="rules">
-            RULES
-        </div>
+    </div>
+
+
+    <div id="rules">
+        RULES
     </div>
     <div id="next">
         NEXT
@@ -51,13 +57,23 @@
             STONE <br>
             PAPER <br>
             SCISSOR <br>
-            <div id="resYourScore" class="score">
-                YOUR SCORE
-                <h3 id="resYourScoreVAR"> </h3>
+            <div id="scores">
+                <div id="resYourScore" class="score">
+                    YOUR SCORE
+                    <h3 id="resYourScoreVAR"> </h3>
+                </div>
+                <div id="resOppScore" class="score">
+                    COMPUTER SCORE
+                    <h3 id="resOppScoreVAR"></h3>
+                </div>
             </div>
-            <div id="resOppScore" class="score">
-                COMPUTER SCORE
-                <h3 id="resOppScoreVAR"></h3>
+        </div>
+        <div id="resultWording">
+            <p id="resWin" class="resPhrase">YOU! WIN!</p>
+            <p id="resLoss" class="resPhrase">GawdDamnLoser</p>
+            <p id="resTie" class="resPhrase">Go again!</p>
+            <div id="playAgain">
+                PLAY AGAIN
             </div>
         </div>
         <div id="yourSide">
@@ -65,16 +81,34 @@
             <img src="assets/paper.svg" alt="" id="yourResPaper" class="opt">
             <img src="assets/scissor.svg" alt="" id="yourResScissor" class="opt">
         </div>
-        <div id="resultWording">
-            
-        </div>
         <div id="compSide">
             <img src="assets/stone.svg" alt="" id="compResStone" class="opt">
             <img src="assets/paper.svg" alt="" id="compResPaper" class="opt">
             <img src="assets/scissor.svg" alt="" id="compResScissor" class="opt">
+        </div>    
+    </div>
+
+
+    <div id="winSheet">
+        <div id="winCeleb">
+            <div id="stars">
+                <img src="assets/star.svg" alt="" id="star1" class="star">
+                <img src="assets/star.svg" alt="" id="star2" class="star">
+                <img src="assets/star.svg" alt="" id="star3" class="star">
+                <img src="assets/star.svg" alt="" id="star4" class="star">
+                <img src="assets/star.svg" alt="" id="star5" class="star">
+            </div>
+            <div id="trophy">
+                <img src="assets/prize.svg" alt="" id="prize">
+            </div>
+        </div>
+        <div id="winText"> <h3>HURRAY!</h3>
+            YOU WON!
+            <div id="playAgain2">
+                PLAY AGAIN
+            </div>
         </div>
     </div>
-    <div id="winSheet"></div>
 </body>
 <script src="index.js"></script>
 </html>
