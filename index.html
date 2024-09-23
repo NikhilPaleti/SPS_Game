@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Come play with me</title>
+</head>
+<body>
+    <div id="mainSheet">
+        <div id="scorecard">
+            STONE <br>
+            PAPER <br>
+            SCISSOR <br>
+            <div id="mainYourScore" class="score">
+                YOUR SCORE
+                <h3 id="mainYourScoreVAR"> </h3>
+            </div>
+            <div id="mainOppScore" class="score">
+                COMPUTER SCORE
+                <h3 id="mainOppScoreVAR"></h3>
+            </div>
+        </div>
+        <div id="game">
+            <div id="break">
+                <img src="assets/stone.svg" alt="" id="stone" class="opt">
+                <img src="assets/paper.svg" alt="" id="paper" class="opt">
+            </div>
+            <img src="assets/scissor.svg" alt="" id="scissor" class="opt">
+        </div>
+        <div id="rules">
+            RULES
+        </div>
+    </div>
+    <div id="next">
+        NEXT
+    </div>
+    <div id="ruleList">
+        <h3>GAME RULES</h3>
+        <ul>
+            <li> Stone beats scissor, scissor beat paper, and paper beats stone </li>
+            <li> "Stone, paper, scissor" is the only correct way to say it </li>
+            <li> Use stone, paper, scissor to settle minor decisions or simply play to pass the time </li>
+            <li> If both players lay down the same hand, each player lays down another hand </li>
+        </ul>
+    </div>
+
+
+    <div id="resultSheet">
+        <div id="scorecard">
+            STONE <br>
+            PAPER <br>
+            SCISSOR <br>
+            <div id="resYourScore" class="score">
+                YOUR SCORE
+                <h3 id="resYourScoreVAR"> </h3>
+            </div>
+            <div id="resOppScore" class="score">
+                COMPUTER SCORE
+                <h3 id="resOppScoreVAR"></h3>
+            </div>
+        </div>
+        <div id="yourSide">
+            <img src="assets/stone.svg" alt="" id="yourResStone" class="opt">
+            <img src="assets/paper.svg" alt="" id="yourResPaper" class="opt">
+            <img src="assets/scissor.svg" alt="" id="yourResScissor" class="opt">
+        </div>
+        <div id="resultWording">
+            
+        </div>
+        <div id="compSide">
+            <img src="assets/stone.svg" alt="" id="compResStone" class="opt">
+            <img src="assets/paper.svg" alt="" id="compResPaper" class="opt">
+            <img src="assets/scissor.svg" alt="" id="compResScissor" class="opt">
+        </div>
+    </div>
+    <div id="winSheet"></div>
+</body>
+<script src="index.js"></script>
+</html>
